@@ -10,6 +10,12 @@ Trước khi bắt đầu, hãy đảm bảo rằng bạn đã cài đặt các 
 ## bạn có thể sử dụng lệnh này để cài đặt thư viện:
 pip install -r requirements.txt
 
+### 🔗 Tải mô hình
+Vì giới hạn 100MB của GitHub, model checkpoint không được đẩy trực tiếp lên repo. Bạn có thể tải từ đây:
+
+- [checkpoint-1488 (Google Drive)](https://drive.google.com/drive/folders/1MrNsnjAbis9Cn7HxwsqXzzfjZwaWSxaF?usp=drive_link)
+- [checkpoint-1984 (Google Drive)](https://drive.google.com/drive/folders/1eHjWSUpMrrdwaiU7KUUFGMzkQX3vECwC?usp=drive_link)
+
 ### Thông tin về các tệp trong dự án
 - `generate_symptom_text_dataset.py`: Tệp này được sử dụng để tạo tập dữ liệu văn bản triệu chứng từ các nguồn khác nhau. Nó giúp chuẩn bị dữ liệu cho quá trình huấn luyện mô hình.
 - `ModelTranining.py`: Tệp này chứa mã nguồn để huấn luyện mô hình AI. Nó sử dụng các tập dữ liệu đã được chuẩn bị và thực hiện các bước huấn luyện cần thiết.
