@@ -1,0 +1,32 @@
+# Bỏ qua toàn bộ checkpoint, model nặng
+*.pt
+*.bin
+*.safetensors
+*.pth
+
+# Nếu cần giữ lại một số file cấu hình nhỏ trong thư mục checkpoint thì có thể giữ lại như sau
+# Nhưng loại file model nặng
+ModelTraining/checkpoint-*/optimizer.pt
+ModelTraining/checkpoint-*/scheduler.pt
+ModelTraining/checkpoint-*/model.safetensors
+ModelTraining/checkpoint-*/pytorch_model.bin
+ModelTraining/checkpoint-*/rng_state.pth
+ModelTraining/checkpoint-*/trainer_state.json
+
+# Bỏ luôn thư mục checkpoints nếu không cần bất kỳ file nào
+# /ModelTraining/checkpoint-*/
+
+# Node/React, Python và VSCode files (nếu có)
+node_modules/
+.env
+.vscode/
+__pycache__/
+*.pyc
+
+# Các file/dữ liệu mẫu lớn
+*.csv
+*.tsv
+*.jsonl
+
+# Nếu muốn giữ file .csv cấu hình/dataset nhỏ → dùng negation:
+!symptom_text_dataset.csv
